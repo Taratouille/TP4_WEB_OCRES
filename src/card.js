@@ -4,7 +4,7 @@ import './App.css';
 export function Card(props) {
   return (
       <div class="carte" style={{background: props.profil.background}}>
-          <header style={{background: props.profil.background}}> <img src={props.profil.img}/> </header>
+          <header style={{background: props.profil.background}}> <img src={props.profil.img} alt=""/> </header>
           <div class="content">
               <div class="name">
                   <div class="prenom">

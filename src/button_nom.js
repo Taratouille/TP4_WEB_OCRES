@@ -109,11 +109,11 @@ export default class Page extends React.Component{
         let x;
         
         for(let i = 0; i<3;i++){
-            if(many[i].nom==one){
+            if(many[i].nom===one){
                 for(let j = 0; j<this.state.backgrounds.length;j++){
-                    if(many[i].background==this.state.backgrounds[j].color){
+                    if(many[i].background===this.state.backgrounds[j].color){
                         
-                        if(j==10){
+                        if(j===10){
                             j=0;
                         }
                         else{
@@ -136,7 +136,7 @@ export default class Page extends React.Component{
         let x;
 
         for(let i = 0; i<3;i++){
-            if(many[i].nom==one){
+            if(many[i].nom===one){
                 many[i].publi.like++;
                 x=i;
             }
