@@ -1,82 +1,9 @@
 import React from "react";
 import './App.css';
-import { FaThumbsUp } from 'react-icons/fa';
-//import jim from './img/jim.png'; // gives image path
-//import Card from './card'
+import { Card } from './card';
+import { Button } from './button';
+import { Publi } from './publication';
 
-/*class Button extends React.Component{
-    constructor(props) {
-        super(props);
-        this.state = {
-          value: this.props.value,
-        };
-      }
-
-    render(){
-        return(
-            <button 
-                class="button" 
-                onClick={() => this.setState({value: 'yes'})}>
-                {this.state.value}
-            </button>
-        )
-    }
-}*/
-
-function Button(props) {
-    return (
-        <button 
-                class="button" 
-                onClick={props.onClick}>
-                {props.value.prenom}
-        </button>
-    );
-  }
-
-function Card(props) {
-    return (
-        <div class="carte" style={{background: props.profil.background}}>
-            <header style={{background: props.profil.background}}> <img src={props.profil.img}/> </header>
-            <div class="content">
-                <div class="name">
-                    <div class="prenom">
-                        <div class="title">First Name:</div> 
-                        <div>{props.profil.prenom}</div>
-                    </div>
-                    <div class="nom">
-                        <div class="title">Last Name:</div> 
-                        <div>{props.profil.nom}</div>
-                    </div>
-                </div>
-                <div class="date">
-                <div class="date">
-                    <div class="title">Birthday:</div> 
-                    <div>{props.profil.date}</div>
-                </div>
-                </div>
-            </div>
-            <footer> 
-                <button style={{background: props.profil.background}} onClick={props.onClick}>
-                    Change Style
-                </button>
-            </footer>
-            
-        </div>
-    );
-  }
-
-  function Publi(props) {
-    return (
-        <section class="poste" style={{background: props.profil.background}}>
-            <div>{props.profil.publi.des}</div>
-            <footer>
-                <div>{props.profil.publi.like}</div> 
-                <div class="icon"><FaThumbsUp/> </div>
-                <button style={{background: props.profil.background}} onClick={props.onClick}> Like </button>
-            </footer>
-        </section>
-    );
-  }
 
 class ButtonList extends React.Component{
     
